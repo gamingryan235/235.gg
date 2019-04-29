@@ -6,7 +6,7 @@ permalink: /about/
 
 ### Twitch
 
-- I often watch [vzezev](https://twitch.tv/vzezev)'s channel. (Note that vzezev is a Korean streamer.)
+- I am a moderator at [vzezev](https://twitch.tv/vzezev)'s channel. (Note that vzezev is a Korean streamer.)
 
 ### Gaming
 

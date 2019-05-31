@@ -10,3 +10,6 @@ github_username:  gamingryan235
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+include:
+ - "_pages"

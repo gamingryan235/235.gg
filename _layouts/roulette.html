@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>룰렛 확률 계산기</title>
+        <script src="/js/jquery-3.4.1.min.js"></script>
+        <script src="/js/roulette.js"></script>
+        <style>
+            .title {
+                margin-bottom: 0.25em;
+            }
+            .description {
+                margin-top: 0;
+                margin-bottom: 3em;
+            }
+            h1, p {
+                text-align: center;
+            }
+            table {
+                margin: 0 auto;
+            }
+            td {
+                padding: 0px 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="calculator">
+            <h1 class="title">투네이션 룰렛 실제확률 계산기</h1>
+            <p class="description">자세한 내용은 <a href="https://help.toon.at/hc/ko/articles/360010038754-%EB%A3%B0%EB%A0%9B%ED%9B%84%EC%9B%90-%EA%B8%B0%EB%8A%A5-%EC%95%88%EB%82%B4">룰렛후원 기능 안내</a>를 참고해주세요.</p>
+        
+            <p>등록확률의 총 합이 <span class="given_total"></span>% 입니다.</p>
+            <table>
+                <tr>
+                    <th>상품</th>
+                    <th>등록확률</th> 
+                    <th>실제확률</th>
+                </tr>
+                <tr class="roulette__row">
+                    <td class="roulette__item">꽝</td>
+                    <td><input class="roulette__given_prob" placeholder="%" value="80"></input></td> 
+                    <td><span class="roulette__actual_prob"></span>%</td>
+                </tr>
+                <tr class="roulette__row">
+                    <td class="roulette__item">당첨</td>
+                    <td><input class="roulette__given_prob" placeholder="%" value="19"></input></td> 
+                    <td><span class="roulette__actual_prob"></span>%</td>
+                </tr>
+                <tr class="roulette__row">
+                    <td class="roulette__item">Unit</td>
+                    <td><input class="roulette__given_prob" placeholder="%" value="1"></input></td> 
+                    <td><span class="roulette__actual_prob"></span>%</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

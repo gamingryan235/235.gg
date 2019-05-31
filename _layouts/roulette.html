@@ -20,6 +20,18 @@
             td {
                 padding: 0px 20px;
             }
+            .roulette__actions {
+                margin: 2em 0;
+            }
+            .roulette__actions__more_button {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                padding: 0.5em;
+            }
+            .roulette__warning__max_20 {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -35,21 +47,27 @@
                     <th>실제확률</th>
                 </tr>
                 <tr class="roulette__row">
-                    <td class="roulette__item">꽝</td>
+                    <td><input class="roulette__item" value="꽝" disabled></input></td>
                     <td><input class="roulette__given_prob" placeholder="%" value="80"></input></td> 
                     <td><span class="roulette__actual_prob"></span>%</td>
                 </tr>
                 <tr class="roulette__row">
-                    <td class="roulette__item">당첨</td>
+                    <td><input class="roulette__item" value="상품 1"></input></td>
                     <td><input class="roulette__given_prob" placeholder="%" value="19"></input></td> 
                     <td><span class="roulette__actual_prob"></span>%</td>
                 </tr>
                 <tr class="roulette__row">
-                    <td class="roulette__item">Unit</td>
+                    <td><input class="roulette__item" value="상품 2"></input></td>
                     <td><input class="roulette__given_prob" placeholder="%" value="1"></input></td> 
                     <td><span class="roulette__actual_prob"></span>%</td>
                 </tr>
             </table>
+
+            <div class="roulette__actions">
+                <button class="roulette__actions__more_button"><span>항목 추가</span></button>
+            </div>
+
+            <p class="roulette__warning__max_20">최대 20개의 항목이 가능합니다.</p>
         </div>
     </body>
 </html>
